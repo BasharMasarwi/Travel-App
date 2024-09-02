@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background-image: url("../views/pexels-apasaric-1285625.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 2.5em;
+    color: #00796b;
+  }
+}
+
+main {
+  .search-section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #004d40;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 2px solid #004d40;
+      border-radius: 5px;
+    }
+
+    .search-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #00796b;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      font-size: 18px;
+      cursor: pointer;
+
+      &:hover {
+        background: #004d40;
+      }
+    }
+  }
+
+  #results {
+    margin-top: 20px;
+    text-align: center;
+
+    #weatherDetails,
+    #tripSummary {
+      display: none;
+      max-width: 500px;
+      margin: 10px auto;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img#destinationImage {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    #tripActions {
+      display: none;
+      button {
+        width: 45%;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #addTrip {
+        background-color: #00796b;
+        color: #ffffff;
+        border: 1px solid #004d40;
+      }
+
+      #deleteTrip {
+        background-color: #d32f2f;
+        color: #ffffff;
+        border: 1px solid #b71c1c;
+      }
+    }
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+footer {
+  text-align: center;
+  color: #004d40;
+  padding: 1rem;
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  border-radius: 15px;
+
+  p {
+    font-size: 0.9em;
+    border-radius: 15px;
+    padding: 0.6rem;
+    font-weight: 600;
+    border: 2px dashed black;
+  }
+}
+
+#image-container img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}

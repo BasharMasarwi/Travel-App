@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Your Journey</title>
+  </head>
+  <body>
+    <header>
+      <h1>Explore Your Journey</h1>
+    </header>
+    <main>
+      <section class="search-section">
+        <form id="travelForm">
+          <label for="destination">Destination:</label>
+          <input
+            type="text"
+            id="destination"
+            name="destination"
+            placeholder="Where do you want to go?"
+            required
+          />
+
+          <label for="departureDate">Departure Date:</label>
+          <input type="date" id="departureDate" name="departureDate" required />
+
+          <button class="search-btn" type="submit">Find My Trip</button>
+        </form>
+      </section>
+
+      <section id="results">
+        <div id="weather-results"></div>
+        <div id="image-container"></div>
+        <div id="tripSummary"></div>
+
+        <div id="tripActions">
+          <button id="addTrip">Add to My Trips</button>
+          <button id="deleteTrip">Delete Trip</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Explore Your Journey. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
