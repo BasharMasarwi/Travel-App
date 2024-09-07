@@ -8,6 +8,9 @@
     "dev": "webpack-dev-server --config webpack.dev.js --open",
     "start": "nodemon src/server/index.js"
   },
+  "engines": {
+    "node": "18.18.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
