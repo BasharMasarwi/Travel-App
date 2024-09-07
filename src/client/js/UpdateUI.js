@@ -1,6 +1,6 @@
 const updateWeatherInfo = (weatherData, destination) => {
   const weatherInfoElement = document.getElementById("weather-results");
-
+  weatherInfoElement.style.display="block"
   const weatherInfo = `
         <div>
             <strong>${destination}</strong><br>

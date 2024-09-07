@@ -13,6 +13,7 @@ export const handleSubmit = async (event) => {
 
     const weatherData = await fetchWeather(latitude, longitude, departureDate);
 
+    updateWeatherInfo(weatherData,destination)
     const imageData = await fetchImage(destination);
     updateImageInfo(imageData.imageUrl);
   } catch (error) {

@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 170vh;
   padding: 30px;
   color: #333;
 }
@@ -141,4 +142,20 @@ footer {
   height: auto;
   border-radius: 10px;
   margin: 20px 0;
+}
+
+@media (min-width:320px) and (max-width:420px){
+  #image-container img {
+    width: 100%;
+  }
+}
+
+#weather-results {
+  display: none;
+  background-color: white;
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #004d40;
 }
